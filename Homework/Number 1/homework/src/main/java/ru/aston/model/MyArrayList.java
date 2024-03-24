@@ -1,14 +1,16 @@
-package ru.aston.MyCollections;
+package ru.aston.model;
 
 import java.util.Arrays;
 
 /**
- * This class represents a collection like an ArrayList
- * @author Ru6ik
+ * This is the ArrayList implementation class from Java Collections, 
+ * which has all the basic methods of the original collection. 
+ * The class is supplemented with some other methods
  * @param <T> type of element in collection
+ * @author Ru6ik
  */
 
-public class MyArrayList<T> implements Comparable<T>{
+public class MyArrayList<T> implements MyList<T> {
     
     private static final int DEFAULT_CAPACITY = 10;
     private Object[] array;
@@ -29,7 +31,7 @@ public class MyArrayList<T> implements Comparable<T>{
      * @param element is element for paste in collection
      * @return if it is successfully added to the collection, it returns true, otherwise false
      */
-
+    @Override
     public boolean add(T element){
         ensureCapacity(size + 1);
         array[size++] = element;
@@ -40,8 +42,9 @@ public class MyArrayList<T> implements Comparable<T>{
      * Another method for adding an item to a collection by index (without replacement)
      * @param index the place where we would like to add an item to the collection
      * @param element the element to add
+     * @throws IndexOutOfBoundsException if the index goes beyond the boundaries of the collection
      */
-
+    @Override
     public void add(int index, T element){
         if (index < 0 || index > size)
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
@@ -54,9 +57,10 @@ public class MyArrayList<T> implements Comparable<T>{
     /**
      * Method for getting an item from a collection by index
      * @param index the location of the collection item that we want to get
+     * @throws IndexOutOfBoundsException if the index goes beyond the boundaries of the collection
      * @return returns a collection item of the specified type
      */
-
+    @SuppressWarnings("unchecked")
     public T get(int index) {
         if (index < 0 || index >= size)
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
@@ -66,8 +70,9 @@ public class MyArrayList<T> implements Comparable<T>{
     /**
      * Method for removing element from collection
      * @param index the location of the collection item that we want to remove
+     * @throws IndexOutOfBoundsException if the index goes beyond the boundaries of the collection
      */
-
+    @Override
     public void remove(int index) {
         if (index < 0 || index >= size)
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
@@ -75,19 +80,19 @@ public class MyArrayList<T> implements Comparable<T>{
         if (numMoved > 0)
             System.arraycopy(array, index + 1, array, index, numMoved);
         array[--size] = null;
+
     }
 
     /**
      * Method for removing all elements from collection (cleaning collection)
      * @return if it is successfully cleaning collection, return true, otherwise false (and return false if size collection equals zero)
      */
-
-    public boolean removeAll() {
-        if(size == 0)
-            return false;
-        Arrays.fill(array, 0, size, null);
-        size = 0;   
-        return true;
+    @Override
+    public void clear() {
+        for(int i = 0; i < size; i++) {
+            array[i] = null;
+        }
+        size = 0;
     }
 
     protected void removeRange(int fromIndex, int toIndex) {
@@ -106,27 +111,28 @@ public class MyArrayList<T> implements Comparable<T>{
      * Method for returning the size of the collection
      * @return return the size of the collection
      */
-
+    @Override
     public int size() {
         return size;
     }
-
+    
     /**
-     * 
+     * This method is implementation method {@code isEmpty()} of {@code MyList}
+     * Returns true, if this custom list contains no elements
+     *
+     * @return this method returns true, if this custom list contains no elements
      */
-
-    public void quickSort() {
-        QuickSort<T> quickSort = new QuickSort<>();
-        quickSort.sort((T[]) array);
+    @Override
+    public boolean isEmpty() {
+        return size == 0;
     }
 
     /**
      * Method of sorting the collection item
      */
-
     public void sort() {
         Arrays.sort(array, 0, size);
-    }
+     }
 
     private void ensureCapacity(int minCapacity){
         int oldCapacity = array.length;
@@ -161,11 +167,6 @@ public class MyArrayList<T> implements Comparable<T>{
         }
         sb.append("]");
         return sb.toString();
-    }
-
-    @Override
-    public int compareTo(T arg) {
-        return 1; 
     }
 
     @Override

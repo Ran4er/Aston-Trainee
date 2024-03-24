@@ -1,11 +1,10 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-import ru.aston.MyCollections.MyArrayList;
-import ru.aston.MyCollections.QuickSort;
+import ru.aston.model.MyArrayList;
 
 
-public class MyArrayListTest {
+public class MyArrayListTestBaseFunction {
     
     @Test
     public void testAdd() {
@@ -24,8 +23,6 @@ public class MyArrayListTest {
         for(int i = 5; i > 0; i--) {
             list.add(i);
         }
-
-        QuickSort<Integer> quickSort = new QuickSort<>();
         list.sort();
 
         assertEquals("[1, 2, 3, 4, 5]", list.toString());
@@ -48,10 +45,8 @@ public class MyArrayListTest {
         for(int i = 0; i < 10; i++) {
             list.add(i);
         }
-        assertTrue(list.removeAll());
+        list.clear();
         assertEquals(0, list.size());
-
-        assertFalse(list.removeAll());
     }
 
     @Test
@@ -110,6 +105,30 @@ public class MyArrayListTest {
         }
 
         assertEquals(5, list.size());
+    }
+
+    @Test
+    public void testBigSize() {
+        MyArrayList<Integer> list = new MyArrayList<>();
+        for(int i = 0; i < 1000; i++) {
+            list.add(i);
+        }
+
+        for(int i = 0; i < 500; i++) {
+            list.remove(i);
+        }
+
+        assertEquals(500, list.size());
+    }
+
+    @Test
+    public void testBigRemoveAll() {
+        MyArrayList<Integer> list = new MyArrayList<>();
+        for(int i = 0; i < 1000; i++) {
+            list.add(i);
+        }
+        list.clear();
+        assertEquals(0, list.size());
     }
 
 }
