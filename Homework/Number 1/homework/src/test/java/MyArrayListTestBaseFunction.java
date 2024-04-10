@@ -18,6 +18,16 @@ public class MyArrayListTestBaseFunction {
     }
 
     @Test
+    public void testAddIndex() {
+        MyArrayList<Integer> list = new MyArrayList<>();
+        for(int i = 0; i < 5; i++) {
+            list.add(i);
+        }
+        list.add(1, 5);
+        assertEquals("[0, 5, 1, 2, 3, 4]", list.toString());
+    }
+
+    @Test
     public void testQuickSort() {
         MyArrayList<Integer> list = new MyArrayList<>();
         for(int i = 5; i > 0; i--) {
@@ -58,6 +68,16 @@ public class MyArrayListTestBaseFunction {
 
         list.remove(1);
         assertEquals("[0, 2, 3, 4]", list.toString());
+    }
+
+    @Test
+    public void testRemoveRange() {
+        MyArrayList<Integer> list = new MyArrayList<>();
+        for(int i = 0; i <= 1000; i++) {
+            list.add(i);
+        }
+        list.removeRange(0, 500);
+        assertEquals(500, list.size());
     }
 
     @Test

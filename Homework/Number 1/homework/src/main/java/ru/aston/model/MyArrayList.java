@@ -95,7 +95,7 @@ public class MyArrayList<T> implements MyList<T> {
         size = 0;
     }
 
-    protected void removeRange(int fromIndex, int toIndex) {
+    public void removeRange(int fromIndex, int toIndex) {
         if(fromIndex < 0 || toIndex >= size || fromIndex > toIndex) {
             throw new IndexOutOfBoundsException("Invalid range: fromIndex = " + fromIndex + ", toIndex = " + toIndex);
         }
