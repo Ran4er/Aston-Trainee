@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "abdcee84fb0f5907",
@@ -162,6 +163,10 @@
   "lastOpenFiles": [
     "Грокаем алгоритмы.md",
     "Лекции.md",
+    "Почему нельзя возвращать NULL.md",
+    "YAGNI.md",
+    "KISS.md",
+    "Pasted image 20240410234919.png",
     "SOLID.md",
     "create a link.md",
     "Welcome.md"
