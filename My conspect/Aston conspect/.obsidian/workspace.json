@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4640ae28e17aca8b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "REST.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "52def61e7374bdfb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SOAP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -86,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Лекции.md",
+                "file": "SOAP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Лекции.md",
+                "file": "SOAP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Лекции.md"
+                "file": "SOAP.md"
               }
             }
           }
@@ -147,19 +172,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e061948e85af0b2d",
+  "active": "52def61e7374bdfb",
   "lastOpenFiles": [
+    "Pasted image 20240414131752.png",
+    "REST.md",
+    "Лекции.md",
+    "SOAP.md",
+    "MVC.md",
+    "Pasted image 20240414120309.png",
+    "GOF.md",
+    "Pasted image 20240413231209.png",
+    "Pasted image 20240413231141.png",
+    "Pasted image 20240413201804.png",
+    "Pasted image 20240413201137.png",
+    "Pasted image 20240413192549.png",
+    "Pasted image 20240413192546.png",
+    "Pasted image 20240413191909.png",
+    "Pasted image 20240413190445.png",
+    "GRASP.md",
+    "Грокаем алгоритмы.md",
+    "Pasted image 20240412222541.png",
+    "SOLID.md",
+    "DRY.md",
     "KISS.md",
     "YAGNI.md",
     "Почему нельзя возвращать NULL.md",
-    "Лекции.md",
-    "Грокаем алгоритмы.md",
-    "Pasted image 20240411234059.png",
-    "Pasted image 20240411234028.png",
-    "Pasted image 20240411230927.png",
-    "Pasted image 20240411231021.png",
-    "Pasted image 20240410234919.png",
-    "SOLID.md",
     "create a link.md",
     "Welcome.md"
   ]
