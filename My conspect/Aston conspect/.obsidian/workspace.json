@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b3bdc75c3566f761",
+        "id": "4a5805887b099920",
         "type": "tabs",
         "children": [
           {
-            "id": "e061948e85af0b2d",
+            "id": "8e70cbc389fa417f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,31 +20,19 @@
             }
           },
           {
-            "id": "4640ae28e17aca8b",
+            "id": "780769b5707ef909",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "REST.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "52def61e7374bdfb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SOAP.md",
+                "file": "Database/Database.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "abdcee84fb0f5907",
@@ -111,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SOAP.md",
+                "file": "Database/Database.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SOAP.md",
+                "file": "Database/Database.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SOAP.md"
+                "file": "Database/Database.md"
               }
             }
           }
@@ -172,30 +159,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52def61e7374bdfb",
+  "active": "780769b5707ef909",
   "lastOpenFiles": [
-    "Pasted image 20240414131752.png",
-    "REST.md",
+    "Java Core/Приведение типов в Java.md",
+    "Database/Database.md",
+    "Java Core/ООП.md",
     "Лекции.md",
-    "SOAP.md",
-    "MVC.md",
-    "Pasted image 20240414120309.png",
-    "GOF.md",
-    "Pasted image 20240413231209.png",
-    "Pasted image 20240413231141.png",
-    "Pasted image 20240413201804.png",
-    "Pasted image 20240413201137.png",
-    "Pasted image 20240413192549.png",
-    "Pasted image 20240413192546.png",
-    "Pasted image 20240413191909.png",
-    "Pasted image 20240413190445.png",
-    "GRASP.md",
+    "Java Core/Java Core.md",
+    "Database",
+    "All Images/Pasted image 20240415144231.png",
+    "All Images/Pasted image 20240415144219.png",
+    "Принципы/DRY.md",
+    "Java Core.md",
+    "Java Core",
     "Грокаем алгоритмы.md",
-    "Pasted image 20240412222541.png",
-    "SOLID.md",
-    "DRY.md",
-    "KISS.md",
-    "YAGNI.md",
+    "Шаблоны проектирования/GRASP.md",
+    "Шаблоны проектирования/GOF.md",
+    "Принципы/YAGNI.md",
+    "Принципы/SOLID.md",
+    "Принципы/KISS.md",
+    "Архитектуры/WSDL.md",
+    "Архитектуры/SOAP.md",
+    "Архитектуры/REST.md",
+    "Архитектуры/MVC.md",
+    "Архитектуры/Архитектуры.md",
+    "All Images/Pasted image 20240415121251.png",
+    "All Images/Pasted image 20240415015940.png",
+    "All Images/Pasted image 20240415014102.png",
+    "Принципы/Принципы.md",
+    "Git.md",
+    "Шаблоны проектирования/Шаблоны проектирования.md",
+    "All Images/Pasted image 20240410234919.png",
+    "All Images",
+    "Шаблоны проектирования",
+    "Принципы",
+    "Архитектуры",
+    "All Images/Pasted image 20240415001634.png",
+    "All Images/Pasted image 20240414220220.png",
+    "All Images/Pasted image 20240414213905.png",
+    "All Images/Pasted image 20240414131752.png",
     "Почему нельзя возвращать NULL.md",
     "create a link.md",
     "Welcome.md"
